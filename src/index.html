@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../public/styles.css">
+
+  <script src="https://kit.fontawesome.com/3fbf3536c4.js" crossorigin="anonymous"></script>
+
+  <title>Javascript Calculator</title>
+</head>
+<body>
+  <header class="header">
+    <h1><a href="https://github.com/devRafaelGomes" target="_blank">devRafaelGomes</a></h1>
+    <div class="theme-switcher" onclick="toggleTheme()">
+      <button class="switch"></button>
+      <span class="switch-track"></span>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="calculator">
+      <div class="calculator-display">
+        <div class="display-text">0</div>
+      </div>
+      <div class="calculator-keypad">
+        <div class="input-keys">
+          <div class="function-keys">
+            <button class="calculator-key key-clear" onclick="clearDisplay()">AC</button>
+            <button class="calculator-key key-sign" onclick="toggleSign()">±</button>
+            <button class="calculator-key key-porcent" onclick="percent()">%</button>
+          </div>
+          <div class="digit-keys">
+            <button class="calculator-key key-delete" onclick="clearLastChar()"></button>
+            <button class="calculator-key key-0" onclick="updateDisplay('0')">0</button>
+            <button class="calculator-key key-dot" onclick="dot()">.</button>
+            <button class="calculator-key key-1" onclick="updateDisplay('1')">1</button>
+            <button class="calculator-key key-2" onclick="updateDisplay('2')">2</button>
+            <button class="calculator-key key-3" onclick="updateDisplay('3')">3</button>
+            <button class="calculator-key key-4" onclick="updateDisplay('4')">4</button>
+            <button class="calculator-key key-5" onclick="updateDisplay('5')">5</button>
+            <button class="calculator-key key-6" onclick="updateDisplay('6')">6</button>
+            <button class="calculator-key key-7" onclick="updateDisplay('7')">7</button>
+            <button class="calculator-key key-8" onclick="updateDisplay('8')">8</button>
+            <button class="calculator-key key-9" onclick="updateDisplay('9')">9</button>
+          </div>
+        </div>
+        <div class="operator-keys">
+          <button class="calculator-key key-divide" onclick="operators('/')">÷</button>
+          <button class="calculator-key key-multiply" onclick="operators('*')">×</button>
+          <button class="calculator-key key-subtract" onclick="operators('-')">-</button>
+          <button class="calculator-key key-add" onclick="operators('+')">+</button>
+          <button class="calculator-key key-equals" onclick="equal()">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts.js"></script>
+  <script src="./theme-switcher.js"></script>
+</body>
+</html>
