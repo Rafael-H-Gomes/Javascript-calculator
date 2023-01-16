@@ -30,9 +30,9 @@ Go to the project directory
   cd my-project
 ```
 
-Open index.html file in your browser 
+Open index.html file in your browser or try this link
 
-
+- [Open in GithubPages](https://devrafaelgomes.github.io/Javascript-calculator/)
 
 ## Authors
 
